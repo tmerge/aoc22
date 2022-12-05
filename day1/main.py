@@ -16,3 +16,11 @@ with open('input.txt', 'rt') as data:
             max = e
     # print result of max search
     print(f'Max value: {max}')
+    
+
+    # get values sorted and solve second part of the day
+    sorted_x = sorted(x)
+
+    print(f"Second most value: {sorted_x[-2]}")
+    print(f"Second most value: {sorted_x[-3]}")
+    print(f"Sum of the top three: {sorted_x[-1] + sorted_x[-2] + sorted_x[-3]}")
